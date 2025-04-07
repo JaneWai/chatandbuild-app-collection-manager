@@ -7,7 +7,7 @@ interface AppCardProps {
   onDelete: (id: string) => void;
 }
 
-const AppCard: React.FC<AppCardProps> = ({ app }) => {
+const AppCard: React.FC<AppCardProps> = ({ app, onDelete }) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
       <div className="p-6">
@@ -27,7 +27,7 @@ const AppCard: React.FC<AppCardProps> = ({ app }) => {
             href={app.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
+            className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 cursor-pointer"
           >
             Visit App <ExternalLink className="ml-1 h-4 w-4" />
           </a>
