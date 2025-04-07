@@ -6,7 +6,9 @@ export type ProductType =
   | 'Utility' 
   | 'Social' 
   | 'Business' 
-  | 'Health & Fitness' 
+  | 'Health & Fitness'
+  | 'Hobby'
+  | 'Crypto'
   | 'Other';
 
 export interface AppItem {

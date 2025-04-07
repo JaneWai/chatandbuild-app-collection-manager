@@ -19,6 +19,8 @@ const productTypes: (ProductType | 'All')[] = [
   'Social',
   'Business',
   'Health & Fitness',
+  'Hobby',
+  'Crypto',
   'Other'
 ];
 
